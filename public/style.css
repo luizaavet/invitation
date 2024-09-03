@@ -1,0 +1,965 @@
+@font-face {
+    font-family: 'armhandwrite';
+    src: url('./fonts/ArmAllegroU1.ttf') ;
+}
+
+@font-face {
+    font-family: "vrdznagir";
+    src: url("./fonts/Vrdznagir.otf");
+}
+
+body {
+    background-color: #fff7ee !important;
+}
+
+#movingImage {
+    position: relative;
+    width: 100px;
+    top: 90px;
+    left: 24vw;    
+    transition: left 1s ease;
+}
+
+.openInvi{
+    width: 320px;
+    position: relative;
+    top: 130px;
+    left: 37vw;
+    text-align: center;
+    font-family: 'armhandwrite';
+    font-weight: 600;
+    font-size: 36px;
+    color: #907575;
+}
+
+.dots{
+    position: relative;
+    top: 155px;
+    left: 39vw;
+    font-size: 52px;
+    width: 310px;
+    text-align: center;
+    letter-spacing: 31px;
+    color: #907575;
+    opacity: 0.8;
+}
+
+.shadoww {
+    width: 90px;
+    height: 55px;
+    border: 1px solid #907575;
+    position: relative;
+    top: 28px;
+    left: 70.2vw;
+    transform: rotate(-4deg);
+    opacity: 0.5;
+}
+    
+p{
+    margin: 30px 0;
+}
+
+.header {
+    width: 100%;
+}
+
+.header-img{
+    padding: 20px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-main {
+    height: 584px;
+    width: 389px;
+    margin: 0 40px;
+}
+
+.img-left, .img-right {
+    width: 352px;
+}
+
+.fst-content, .hscd-content{
+    width: 100%;
+    display: inline;
+    position: absolute;
+    top: 38px;
+    color: white;
+    font-family: "armhandwrite";
+    font-weight: 500;
+    font-size: 32px;
+    text-align: center;
+    text-shadow: 3px 1px 2px rgba(179, 214, 185, 0.6);
+}
+
+.hscd-content {
+    top: 458px;
+    font-weight: 300;
+}
+
+.timer{
+    font-family: "armhandwrite";
+    height: 210px;
+    width: 100%;
+    background: radial-gradient(circle, rgba(243, 225, 215, 1) 5%, rgba(174, 163, 161, 1) 100%);
+    font-size: 39px;
+    text-shadow: 3px 3px 7px rgba(213, 229, 219, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 35%;
+    font-weight: 600;
+    text-shadow: 7px 4px 10px #7e6767;
+}
+
+.timer div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.timer p {
+    height: 40px;
+}
+
+.tm-name {
+    font-size: 16px;
+}
+
+#days,
+#hours,
+#minutes,
+#seconds {
+    font-family: "Old Standard TT", serif;
+    font-weight: 300;
+}
+
+.main-box {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: 20px;
+    padding: 40px 20px;
+}
+
+.main-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-family: 'MontserratARM', Arial, sans-serif;
+}
+
+.main-box .main-text {
+    width: 32%;
+}
+
+.main-img {
+    width: 60%;
+    height: 100%;
+    margin: 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;    
+}
+        
+.imgs.visible {
+    opacity: 1;
+    transform: translateY(0); 
+}
+
+.imgs{
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 1s ease, transform 1s ease;
+}
+
+.main-img img,
+.schedule-img {
+    border-radius: 200px 0;
+}
+
+.fst-img {
+        position: relative;
+        left: 59px;
+        z-index: -2;
+        width: 293px;
+        height: 450px;
+}
+
+.img-scd {
+    height: 576px;
+    width: 375px;
+}
+
+.month {
+    font-family: "armhandwrite";
+    font-size: 34px;
+    margin-left: 50px;
+}
+
+.cld {
+    width: 260px;
+    height: 204px;
+    position: absolute;
+    margin-top: -27px;
+    z-index: -1;
+}
+
+.text-box {
+    width: 360px;
+    margin-top: 100px;
+    margin-left: 20%;
+    font-family: 'vrdznagir'; 
+    text-shadow: 2px 1px #c3b0b0b8;
+}
+
+.text-h1,
+.schedule {
+    font-size: 40px;
+    color: #4a4952;
+    letter-spacing: 6px;
+}
+
+.scd-box {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5vh;
+    font-family: 'vrdznagir';
+    text-shadow: 2px 1px #c3b0b0b8;
+    height: 100vh;
+    padding: 40px 0;
+}
+
+.text2 {
+    width: 432px;
+    color: #555555;
+    font-size: 26px;
+    transform-origin: center center;
+    line-height: 30px;
+}
+
+.locations{
+   height: 100%;
+   width: 288px;
+}
+
+.date{
+    font-family: "Abril Fatface", serif;
+    font-size: 26px;
+}
+
+.text3, a{
+    color: #555555 !important;
+    font-size: 22px;
+}
+
+.schedule-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; 
+    padding-left: 195px;   
+    padding-right: 15px;
+}
+
+.loc-div{
+   margin-top: 10px;
+}
+
+.loc-name div{
+    margin-bottom: 35px;
+}
+
+.schedule {
+    margin: 30px 0;
+    text-align: center;
+    font-weight: 700;
+}
+
+.sched-imgs {
+    display: flex;
+    flex-direction: column;
+    border-right: 3px solid #a57f71;
+    width: 150px;
+    margin-right: 20px;
+    justify-content: center;
+    height: 436px;
+}
+
+.sched-imgs img {
+    width: 100px;
+    height: 100px;
+    margin: 20px 0;
+}
+
+.hour-loc{
+    position: relative;
+}
+
+.hour-loc::before {
+    content: '';
+    position: absolute;
+    left: -54px;
+    top: 53px;
+    right: 0;
+    background-color: #a57f71;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+
+}
+
+.loc-name {
+    padding: 40px 0 40px 20px
+}
+
+@media screen and (max-width: 1279px) {
+    .img-main {
+        height: 570px;
+        width: 380px;
+        margin: 0 20px;
+    }
+
+    .img-left,
+    .img-right {
+        width: 240px;
+        height: 360px;
+    }
+
+    .text2{
+        width: 330px;
+    }
+  
+} 
+
+@media screen and (max-width: 1056px) {
+    .text-h1,
+    .schedule {
+        font-size: 35px;
+    }
+
+    .schedule{
+        margin-top: 95px;
+    }
+
+    .img-scd {
+        height: 561px;
+        width: 370px;
+    }
+
+    .fst-img {
+        width: 290px;
+        height: 388px;
+    }
+
+    .openInvi{
+        left: 33vw
+    }
+
+    .dots{
+        left: 35vw;
+    }
+
+    #movingImage{
+        left: 19vw;
+    }
+
+    .text2{
+        width: 312px;
+    }
+}
+
+@media screen and (max-width: 987px) {
+
+    .text-h1,
+    .schedule {
+        font-size: 35px;
+    }
+
+    .img-scd {
+        height: 500px;
+        width: 330px;
+    }
+
+    .fst-img {
+        width: 275px;
+        height: 334px;
+    }
+
+    .text-box {
+        margin-left: 6%;
+    }
+
+    .fst-img {
+        border-radius: 123px 0 !important;
+    }
+
+    .dots{
+        letter-spacing: 25px;
+        left: 33vw;
+    }  
+    
+    #movingImage {
+        left: 18vw;
+    }
+
+}
+
+@media screen and (max-width: 900px) {
+    .img-main {
+        height: 497px;
+        width: 331px;
+        margin: 0 10px;
+    }
+
+    .img-left,
+    .img-right {
+        width: 223px;
+        height: 340px;
+    }
+       
+    .hscd-content {
+        top: 405px;
+    }
+
+    .text-h1,
+    .schedule {
+        font-size: 35px;
+    }
+    
+    .img-scd {
+        border-radius: 150px 0 !important;
+        height: 467px;
+        width: 292px;
+    }
+    
+    .fst-img {
+        width: 278px;
+        height: 301px;
+    }
+
+    .text-box {
+        margin-top: 55px;
+    }
+
+    .text2 {
+        font-size: 24px;
+        width: 291px;
+    }
+
+    .cld {
+        width: 251px;
+        height: 200px;
+        z-index: -3;
+    }
+
+    .openInvi {
+        left: 32vw;
+    }
+
+    .dots {
+        width: 180px;
+        letter-spacing: 13px;
+        left: 39vw;
+    }
+}
+
+@media screen and (max-width: 782px) {
+    .img-main {
+        margin: 0;
+        height: 431px;
+        width: 310px;
+    }
+
+    .img-left,
+    .img-right {
+        width: 206px;
+        height: 344px;
+        z-index: -2;
+    }
+
+    .img-left{
+        margin-right: -20px;
+    }
+
+    .img-right{
+        margin-left: -20px;
+    }
+
+    .hscd-content, .fst-content {
+        font-size: 25px;
+    }
+
+    .hscd-content {
+        top: 370px;
+    }
+
+    .timer{
+        height: 169px;
+        padding: 0 30%;
+        font-size: 33px;
+    }
+
+    .timer p {
+        margin-bottom: 0;
+    }
+
+    .img-scd {
+        height: 433px;
+        width: 274px;
+    }
+
+    .fst-img {
+        width: 274px;
+        height: 266px;
+        border-radius: 106px 0 !important;
+    }
+
+    .text-box{
+        margin-top: 33px;
+        width: 322px;
+        margin-left: 0;
+    }
+
+    .text-h1{
+        font-size: 32px;
+    }
+
+    .text2{
+        font-size: 21px;
+        width: 251px;
+    }
+
+    .cld {
+        width: 223px;
+        height: 176px;
+    }
+
+    .month{
+        font-size: 30px;
+    }
+
+    .main-box .main-text {
+        width: 25%;
+    }
+
+    .main-img {
+        width: 67%;
+    }
+
+    .schedule-content{
+        padding-left: 158px;
+    }
+
+    .openInvi{
+        font-size: 32px;
+        left: 28vw;
+    }
+
+    .dots {
+        letter-spacing: 10px;
+        left: 38vw;
+    }
+
+    #movingImage{
+        left: 18vw;
+    }
+}
+
+@media screen and (max-width: 672px) {
+    .img-main {
+        width: 300px;
+    }
+
+    .img-left,
+    .img-right {
+        width: 183px;
+        height: 312px;
+    }
+
+    .img-left {
+        margin-right: -8px;
+    }
+
+    .img-right {
+        margin-left: -8px;
+    }
+
+    .hscd-content,
+    .fst-content {
+        font-size: 32px;
+    }
+
+    .hscd-content {
+        top: 340px;
+    }
+
+    .timer{
+        font-size: 29px;
+    }
+
+    .tm-name{
+        font-size: 20px;
+    }
+
+    .img-scd{
+        height: 400px;
+        width: 244px;
+        border-radius: 128px 0 !important;
+    }
+
+    .fst-img{
+        width: 274px;
+        height: 276px;
+        top: 118px;
+    }
+
+    .text-box{
+        width: 253px;
+    }
+
+    .text-h1 {
+        font-size: 30px;
+    }
+    
+    .text2 {
+        font-size: 20px;
+        width: 314px;
+    }
+
+    .month{
+        font-size: 27px;
+        margin-left: 31px;
+    }
+
+    .cld {
+        width: 202px;
+        height: 160px;
+        margin-left: -10px;
+    }
+
+    .locations {
+        width: 268px;
+    }
+
+    .loc-name{
+        padding-right: 20px;
+    }
+
+    .loc-name div {
+        margin-bottom: 25px;
+    }
+
+    .date{
+        font-size: 24px;
+    }
+
+    .text3{
+        font-size: 20px;
+    }
+
+    .text3 i {
+        font-size: 37px !important;
+    }
+
+    .openInvi {
+        font-size: 30px;
+        left: 24vw;
+    }
+        
+    #movingImage {
+        left: 16vw;
+    }
+
+    .dots{
+        left: 36vw;
+    }
+}
+
+
+@media screen and (max-width: 580px) {
+    .img-main {
+        height: 335px;
+        width: 243px;
+    }
+    
+    .img-left,
+    .img-right {
+        width: 151px;
+        height: 226px;            
+    }
+    
+    .fst-content {
+        top: 27px;
+        font-size: 28px;
+    }
+    
+    .hscd-content {
+        top: 261px;
+        font-size: 24px;
+    }
+
+    .timer{
+        height: 150px;
+        padding: 0 23%;
+    }
+
+    .timer div{
+        margin-right: 24px;
+    }
+
+    .main-box {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .main-text,
+    .main-img {
+        width: 100%;
+    }
+    
+    .text-box {
+        margin: 0;
+        width: 100%;
+        padding: 20px;
+    }
+    
+    .full-text {
+        text-align: center;
+    }
+    
+    .text-h1 {
+        font-size: 26px;
+    }
+    
+    .main-box .main-text {
+        width: 100%;
+    }
+    
+    .text2 {
+        font-size: 22px;
+        width: 100%;
+    }
+    
+    .cld {
+        margin-left: 0;
+        width: 189px;
+        height: 147px;
+    }
+    
+    .month {
+        margin-left: 33px;
+    }
+    
+    .main-img {
+        margin-top: -45px;
+        padding: 0 15px;
+    }
+    
+    .fst-img {
+        left: 25px;
+        top: 36px;
+        width: 166px;
+        height: 224px;
+    }
+    
+    .img-scd {
+        height: 322px;
+        width: 204px;
+    }
+
+    .loc-name{
+        position: relative;
+        top: 20px;
+    }
+
+    .date {
+        font-size: 20px;
+    }
+    
+    .text3 {
+        font-size: 14px;
+    }
+
+    .text3 i {
+        font-size: 28px !important;
+    }
+
+    .scd-box{
+        margin-top: 0;
+        padding-top: 0;
+    }
+
+    .schedule-content {
+        padding-left: 96px;
+   }
+
+    .locations {
+        width: 255px;
+    }
+
+    .openInvi{
+        left: 25vw;
+        width: 265px;
+    }
+
+    #movingImage{
+        left: 14vw;
+    }
+
+    .dots {
+        width: 110px;
+        left: 40vw;
+        letter-spacing: 3px;
+    }
+           
+} 
+
+@media screen and (max-width: 483px) {
+    .loc-name {
+        position: relative;
+        top: 20px;
+    }
+    
+    .locations {
+        width: 240px;
+    }
+
+}
+
+
+@media screen and (max-width: 463px) {
+    .img-main {
+        height: 301px;
+        width: 184px;
+        /* height: 325px; */
+        /* width: 211px; */
+        box-shadow: 9px 8px 8px 0 rgba(0, 0, 0, 0.2), -19px 3px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+    
+    .img-left,
+    .img-right {
+        width: 97px;
+        height: 158px;
+        
+    }
+
+    .fst-content{
+        font-size: 25px;
+    }
+
+    .hscd-content {
+        font-size: 20px;
+    }
+
+    .timer{
+        height: 140px;
+        font-size: 24px;
+        padding: 0px 15%;
+    }
+
+    .tm-name{
+        margin-top: -12px;
+    }
+
+    .main-img{
+        margin-top: 60px;
+    }
+
+    .fst-img{
+        top: 0;
+    }
+
+    .img-scd{
+        margin-right: 20px;
+    }
+
+    .text3{
+        font-size: 15px;
+    }
+
+    .text3 i {
+        font-size: 22px !important;
+    }
+
+    .locations{
+        width: 180px;
+    }
+
+    .schedule-content {
+        padding-left: 20px;
+    }
+
+    .timer div{
+        margin-right: 17px;
+    }
+
+    .dots {
+        width: 111px;
+        left: 35vw;
+        letter-spacing: -4px;
+    }
+
+    .openInvi {
+        left: 15vw;
+        font-size: 26px;
+    }
+
+    #movingImage{
+        left: 5vw;
+    }
+} 
+
+@media screen and (max-width: 400px){
+    .img-left {
+        margin-right: -15px;
+    }
+    
+    .img-right {
+        margin-left: -15px;
+    }
+}
+
+@media screen and (max-width: 353px) {
+    .img-main {
+        height: 186px;
+        width: 122px;
+    }
+
+    .img-left,
+    .img-right {
+        width: 100px;
+        height: 148px;
+    }
+
+    .fst-content {
+        font-size: 13px;
+    }
+
+    .hscd-content {
+        top: 168px;
+        font-size: 12px;
+    }
+
+    .timer {
+        height: 120px;
+        font-size: 22px;
+    }
+    
+    .tm-name {
+        font-size: 11px;
+    }
+
+    .img-scd{
+        height: 305px;
+        width: 189px;
+    }
+
+    .fst-img{
+        width: 232px;
+        height: 198px;
+    }
+
+}
