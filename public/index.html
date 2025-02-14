@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Հրավիրատոմս</title>
+    <title>Invitation letter</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,120 +19,127 @@
         href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Noto+Serif+Armenian:wght@100..900&family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap"
         rel="stylesheet">
 
-    <link rel="icon" href="./image/love-letter.png" sizes="32x32" type="image/png">
-
+    <link rel="icon" href="./image/apricot.png" sizes="32x32" type="image/png">
+    <style>
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+      </style>
 </head>
 
 <body>
     <div id="automusic">
-        <audio id="backgroundMusic" loop autoplay>
+        <audio id="backgroundMusic" loop >
             <source src="./music/music.mp3" type="audio/mpeg">
             Your browser does not support the audio element.
         </audio>
-
-        <!-- Play button -->
-        <p class="openInvi">Բացի՛ր հրավիրատոմսը</p>
+        <p class="openInvi">You're Invited</p>
+        <p class="openInvi">Open the invitation letter</p>
         <p class="dots"> . . . .</p>
         <img src="./image/envelope.png" id="movingImage" />
         <div class="shadoww"></div>
     </div>
 
     <div id="full" style="display:none">
-        <!-- header -->
         <div class="header">
             <div class="header-img">
-                <img class="img-left imgs" src="./image/photo_1_2024-09-03_22-48-19.jpg"></img>
-                <img class="img-main imgs" src="./image/photo_2_2024-09-03_22-48-19.jpg"></img>
-                <img class="img-right imgs" src="./image/WhatsApp Image 2024-09-03 at 23.40.31_a29cf482.jpg"></img>
+                <img class="img-left imgs" src="./image/picture-1.jpg"></img>
+                <img class="img-main imgs" src="./image/picture-2.jpg"></img>
+                <img class="img-right imgs" src="./image/picture-3.jpg"></img>
             </div>
             <div class="fst-content">
-                <p>Նարեկ և Հայկուհի</p>
+                <p style="opacity: 0; animation: fadeIn 1s ease-in-out forwards; animation-delay: 1s;">ClinChoice Pharma</p>
+                <p style="opacity: 0; animation: fadeIn 1s ease-in-out forwards; animation-delay: 1.5s;">Apricot 2025</p>
             </div>
             <div class="hscd-content">
-                <p>Մենք ամուսնանում ենք</p>
+                <p style="opacity: 0; animation: fadeIn 1s ease-in-out forwards; animation-delay: 2s;">Let's celebrate together!</p>
             </div>
             <div class="timer">
                 <div class="days">
                     <p id="days"></p>
-                    <p class="tm-name">Օր</p>
+                    <p class="tm-name">Day</p>
                 </div>
                 <div class="hours">
                     <p id="hours"></p>
-                    <p class="tm-name">Ժամ</p>
+                    <p class="tm-name">Hour</p>
                 </div>
                 <div class="minutes">
                     <p id="minutes"></p>
-                    <p class="tm-name">Րոպե</p>
+                    <p class="tm-name">Minute</p>
                 </div>
                 <div class="seconds">
                     <p id="seconds"></p>
-                    <p class="tm-name">Վայրկյան</p>
+                    <p class="tm-name">Second</p>
                 </div>
             </div>
         </div>
 
-        <!-- main text -->
         <div class="main-box">
-            <div class="main-text">
-                <div class="text-box">
-                    <div class="full-text">
-                        <p class="text-h1">Սիրելի հյուրեր</p>
-                        <p class="text2">Սիրելի հյուրեր մեծ ուրախությամբ հրավիրում ենք ձեզ մասնակցելու
-                             մեր հարսանիքին, կիսելու մեր սիրո օրը, դառնալու մեր կյանքի այս կարևոր պահի վկան և 
-                             ուղեկիցը՝ ձեր սրտի ջերմությամբ և հոգու խաղաղությամբ: 
-                             <br>
-                             Հարսանիքը տեղի կունենա՝
-                        </p>
+            <div style="width: 60%; display: flex; flex-direction: column; font-family: melvastype; color: #555555;">
+                <p style="text-align: center; font-size: 35px;">You're Invited!</p>
+                <p style="text-align: center; max-width: 30rem;display: flex;margin-left: auto; margin-right: auto; font-size: 20px;">
+                    We are pleased to invite you to our Annual Awards Event, 
+                    where we will celebrate the outstanding achievements of 
+                    ClinChoice professionals in the development of the Armenian biotechnology 
+                    industry. Join us for an evening of recognition, innovation, 
+                    and celebration of excellence!
+                </p>
+                <p style="font-size: 30px; text-align: center;  margin-top: 1rem;">Save the Date</p>
+                <div style="display: flex; flex-direction: column; margin-left: auto; margin-right: auto; ">
+                    <div style="display: flex; gap: 10px; justify-items: center; align-items: center;">
+                        <img src="./image/may28.png" class="saveTheDateIcons"/>
+                        <p>May 28th</p>
                     </div>
-                    <div class="calendar">
-                        <p class="month">Հոկտեմբեր</p>
-                        <img class="cld" src="./image/2.png" />
+                    <div style="display: flex; gap: 10px; justify-items: center; align-items: center;">
+                        <img src="./image/time.png" class="saveTheDateIcons"/>
+                        <p>Time: 5:00 PM</p>
                     </div>
-
+                    <div style="display: flex; gap: 10px; justify-items: center; align-items: center;">
+                        <img src="./image/location.png" class="saveTheDateIcons"/>
+                        <p>Venue: Nor Dvin Restaurant </br>
+                        Ejmiatsin, Ashtaraki Highway, 1 Building</p>
+                    </div>
                 </div>
+                <p style="font-size: 30px; text-align: center;">We look forward to celebrating it together!</p>
             </div>
-            <div class="main-img">
-                <img class="fst-img imgs" src="./image/photo_3_2024-09-03_22-48-19.jpg" />
-                <img class="img-scd imgs" src="./image/photo_5_2024-09-03_22-48-19.jpg" />
-
+            <div style="width: 40%; margin-top: 1rem">
+                <img class="cld" src = './image/calendar.png' />
             </div>
         </div>
 
-        <!-- schedule  -->
         <div class="scd-box">
-            <p class="schedule">Ծրագիր</p>
-            <div class="schedule-content">
+            <p class="schedule" style="color: #555555;font-family: melvastype;">Agenda</p>
+            <div class="schedule-content" style="color: #555555;font-family: melvastype;">
                 <div class="sched-imgs">
-                    <img class="imgs" src="./image/church.png" />
-                    <img class="imgs" src="./image/Screenshot 2024-09-04 000112.png" />
-                    <img class="imgs" src="./image/party.png" />
+                    <img src="./image/speaker.png" style="height: 70px; width: 70px;"/>
+                    <img src="./image/10th.png"  style="height: 70px; width: 70px;"/>
+                    <img src="./image/dance.png" style="height: 70px; width: 100px;"/>
+                    <img src="./image/cake.png" style="height: 70px; width: 70px;"/>
                 </div>
                 <div class="loc-name">
-                    <div class="hour-loc imgs">
-                        <p class="date">14։00</p>
+                    <div class="hour-loc imgs: ">
+                        <p class="date">18:00</p>
                         <p class="text3">
-                            <a href="https://yandex.ru/maps/-/CDwG4YNg" target="_blank">
-                                <i class="fa-solid fa-location-dot" style="color: #4a4952; font-size: 43px;"></i>
-                                Հառիճավանք
-                            </a>
+                            John's, Somo's speech
                         </p>
                     </div>
                     <div class="hour-loc imgs">
-                        <p class="date">16:00</p>
+                        <p class="date">19:00</p>
                         <p class="text3">
-                            <a href="https://yandex.ru/maps/-/CDwG4VP5" target="_blank">
-                                <i class="fa-solid fa-location-dot" style="color: #4a4952; font-size: 43px;"></i>
-                                Զագս
-                            </a>
+                            10th anniversary recognition
                         </p>
                     </div>
                     <div class="hour-loc imgs">
-                        <p class="date">17։00</p>
+                        <p class="date">20:30</p>
                         <p class="text3">
-                            <a href="https://yandex.ru/maps/-/CDwG4VP5" target="_blank">
-                                <i class="fa-solid fa-location-dot" style="color: #4a4952; font-size: 43px;"></i>
-                                Տիգրան Մեծ Հանդիսությունների Սրահ
-                            </a>
+                            Band with the dance of haykakan zurna
+                        </p>
+                    </div>
+                    <div class="hour-loc imgs">
+                        <p class="date">21:30</p>
+                        <p class="text3">
+                            Cake cutting
                         </p>
                     </div>
                 </div>
@@ -142,12 +149,12 @@
 </body>
 
 <script>
-    const endTime = new Date('Octaber 13, 2024 12:00:00');
+    const endTime = new Date('May 28, 2025 17:00:00');
 
     function updateTimer() {
         const now = new Date().getTime();
         const distance = endTime - now;
-        // Calculate time components
+        
         const days = Math.floor(distance / (1000 * 60 * 60 * 24)) > 0 ? Math.floor(distance / (1000 * 60 * 60 * 24)) :
             0;
         const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)) > 0 ? Math.floor((distance % (
@@ -156,15 +163,12 @@
             60 * 60)) / (1000 * 60)) : 0;
         const seconds = Math.floor((distance % (1000 * 60)) / 1000) > 0 ? Math.floor((distance % (1000 * 60)) / 1000) :
             0;
-        // Display the result in the element with id="timer"
         document.getElementById("days").innerHTML = days;
         document.getElementById("hours").innerHTML = hours;
         document.getElementById("minutes").innerHTML = minutes;
         document.getElementById("seconds").innerHTML = seconds;
     }
-    // Update the timer every second
     const x = setInterval(updateTimer, 1000);
-    // Initial call to display the timer immediately on page load
     updateTimer();
     var audio = document.getElementById('backgroundMusic');
     document.getElementById('movingImage').addEventListener('click', function() {
@@ -175,31 +179,28 @@
         setTimeout(() => {
             document.getElementById('automusic').style.display = "none";
             document.getElementById('full').style.display = "block";
-        }, 2000); // 5000 milliseconds = 5 seconds
+        }, 2000); 
         observeImages();
     });
 
     function observeImages() {
         const images = document.querySelectorAll('.imgs');
-        // Options for the observer (threshold controls when the callback is triggered)
         const options = {
             root: null,
-            threshold: 0.4 // Trigger when 40% of the image is in view
+            threshold: 0.4
         };
-        // Callback function for the observer
         const callback = (entries, observer) => {
             entries.forEach((entry, index) => {
                 if (entry.isIntersecting) {
                     setTimeout(() => {
                         entry.target.classList.add('visible');
-                    }, index * 300); // Staggered effect
-                    observer.unobserve(entry.target); // Stop observing once it's animated
+                    }, index * 300); 
+                    observer.unobserve(entry.target);
                 }
             });
         };
-        // Create the Intersection Observer
         const observer = new IntersectionObserver(callback, options);
-        // Observe each image
+
         images.forEach(image => {
             observer.observe(image);
         });

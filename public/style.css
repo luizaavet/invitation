@@ -1,23 +1,24 @@
 @font-face {
     font-family: 'armhandwrite';
-    src: url('./fonts/ArmAllegroU1.ttf') ;
+    src: url('./fonts/Melvastype-Baguet-Script-Regular.otf') ;
 }
 
 @font-face {
-    font-family: "vrdznagir";
-    src: url("./fonts/Vrdznagir.otf");
+    font-family: "melvastype";
+    src: url("./fonts/Melvastype-Baguet-Script-Regular.otf");
 }
 
 body {
-    background-color: #fff7ee !important;
+    background-color: #ffcf6c !important;
 }
 
 #movingImage {
     position: relative;
-    width: 100px;
+    width: 110px;
     top: 90px;
     left: 24vw;    
     transition: left 1s ease;
+    z-index: 50;
 }
 
 .openInvi{
@@ -45,13 +46,13 @@ body {
 }
 
 .shadoww {
-    width: 90px;
+    width: 80px;
     height: 55px;
     border: 1px solid #907575;
     position: relative;
     top: 28px;
-    left: 70.2vw;
-    transform: rotate(-4deg);
+    left: 71.5vw;
+    transform: rotate(-6deg);
     opacity: 0.5;
 }
     
@@ -201,16 +202,14 @@ p{
 }
 
 .cld {
-    width: 260px;
-    height: 204px;
+    width: 320px;
+    height: 300px;
     position: absolute;
-    margin-top: -27px;
-    z-index: -1;
+    border-radius: 5%;
 }
 
 .text-box {
     margin-top: 10px;
-    margin-left: 20%;
     font-family: 'vrdznagir'; 
     text-shadow: 2px 1px #c3b0b0b8;
 }
@@ -315,6 +314,11 @@ p{
     padding: 40px 0 40px 20px
 }
 
+.saveTheDateIcons {
+    height: 50px;
+    width: 50px;
+}
+
 @media screen and (max-width: 1279px) {
     .img-main {
         height: 570px;
@@ -371,6 +375,7 @@ p{
 
     .text-h1,
     .schedule {
+        margin-top: 10rem;
         font-size: 35px;
     }
 
@@ -384,7 +389,7 @@ p{
     }
 
     .text-box {
-        margin-left: 6%;
+        /* margin-left: 6%; */
     }
 
     .fst-img {
@@ -642,7 +647,6 @@ p{
     .cld {
         width: 202px;
         height: 160px;
-        margin-left: -10px;
     }
 
     .scd-box{
