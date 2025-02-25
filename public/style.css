@@ -74,7 +74,7 @@ p{
 }
 
 .header-img{
-    padding: 20px;
+    /* padding: 20px; */
     height: 100%;
     display: flex;
     align-items: center;
@@ -168,6 +168,7 @@ p{
 
 .main-box .main-text {
     width: 32%;
+    background-color: #7e6767;
 }
 
 .main-img {
@@ -335,6 +336,12 @@ p{
     width: 40px;
 }
 
+.calendarContainer{
+    display: flex; 
+    width: 40%; 
+    margin-top: 1rem; 
+}
+
 @media screen and (max-width: 1279px) {
     .img-main {
         height: 570px;
@@ -351,6 +358,15 @@ p{
 } 
 
 @media screen and (max-width: 1056px) {
+    .logo {
+        position: absolute;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        height: 60px;
+        width: 280px;
+    }
+
     .text-h1,
     .schedule {
         font-size: 35px;
@@ -384,6 +400,13 @@ p{
     .scd-box{
         margin-top: -20px;
         padding: 0;
+    }
+
+    #days,
+    #hours,
+    #minutes,
+    #seconds{
+        font-size: 30px;
     }
 }
 
@@ -423,6 +446,16 @@ p{
 
     .main-img{
         margin: 46px 0;
+    }
+
+    .main-box{
+        flex-direction: column;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .cld {
+        margin-left: 0;
     }
 }
 
@@ -466,9 +499,13 @@ p{
         margin: 69px 20px 0 0;
     }
 
+    .main-box{
+        flex-direction: column;
+    }
+
     .cld {
-        width: 251px;
-        height: 200px;
+        width: 300px;
+        height: 250px;
         z-index: -3;
     }
 
@@ -481,6 +518,10 @@ p{
         letter-spacing: 13px;
         left: 39vw;
     }
+
+    .timer p{
+        font-size: 25px;
+    }
 }
 
 @media screen and (max-width: 782px) {
@@ -488,6 +529,11 @@ p{
         margin: 0;
         height: 431px;
         width: 310px;
+    }
+
+    .main-box{
+        justify-content: center;
+        align-items: center;
     }
 
     .img-left,
@@ -516,11 +562,16 @@ p{
     .timer{
         height: 169px;
         padding: 0 30%;
-        font-size: 33px;
+        font-size: 25px;
     }
 
     .timer p {
         margin-bottom: 0;
+        font-size: 25px;
+    }
+
+    .timer{
+        gap: 0px;
     }
 
     .img-scd {
@@ -551,8 +602,8 @@ p{
         margin-top: 40px;
     }
     .cld {
-        width: 223px;
-        height: 176px;
+        width: 250px;
+        height: 200px;
     }
 
     .month{
@@ -561,6 +612,7 @@ p{
 
     .main-box .main-text {
         width: 25%;
+        flex-direction: column;
     }
 
     .main-img {
@@ -585,11 +637,20 @@ p{
     #movingImage{
         left: 18vw;
     }
+
+    .timer{
+        gap: 20px;
+    }
 }
 
 @media screen and (max-width: 672px) {
     .img-main {
-        width: 300px;
+        width: 270px;
+    }
+
+    .main-box {
+        flex-direction: column;
+        align-items: center;
     }
 
     .img-left,
@@ -616,7 +677,8 @@ p{
     }
 
     .timer{
-        font-size: 29px;
+        font-size: 25px;
+        gap: 20px;
     }
 
     .tm-name{
@@ -657,8 +719,9 @@ p{
     }
 
     .cld {
-        width: 202px;
-        height: 160px;
+        width: 250px;
+        height: 200px;
+        margin-left: 0rem;
     }
 
     .scd-box{
@@ -728,6 +791,7 @@ p{
     .timer{
         height: 150px;
         padding: 0 23%;
+        gap: 0px
     }
 
     .timer div{
@@ -768,9 +832,9 @@ p{
     }
     
     .cld {
-        margin-left: 0;
-        width: 189px;
-        height: 147px;
+        width: 250px;
+        height: 200px;
+        margin-left: -2rem
     }
     
     .month {
@@ -911,13 +975,10 @@ p{
         width: 180px;
     }
 
-    .schedule-content {
-        padding-left: 20px;
+    .timer{
+        gap: 0px;
     }
 
-    .timer div{
-        margin-right: 17px;
-    }
 
     .dots {
         width: 111px;
@@ -933,55 +994,9 @@ p{
     #movingImage{
         left: 5vw;
     }
+
+    .main-box{
+        padding: 10px 10px;
+    }
 } 
 
-@media screen and (max-width: 400px){
-    .img-left {
-        margin-right: -15px;
-    }
-    
-    .img-right {
-        margin-left: -15px;
-    }
-}
-
-@media screen and (max-width: 353px) {
-    .img-main {
-        height: 186px;
-        width: 122px;
-    }
-
-    .img-left,
-    .img-right {
-        width: 100px;
-        height: 148px;
-    }
-
-    .fst-content {
-        font-size: 13px;
-    }
-
-    .hscd-content {
-        top: 168px;
-        font-size: 12px;
-    }
-
-    .timer {
-        height: 120px;
-        font-size: 22px;
-    }
-    
-    .tm-name {
-        font-size: 11px;
-    }
-
-    .img-scd{
-        width: 189px;
-    }
-
-    .fst-img{
-        width: 139px;
-        height: 168px;
-    }
-
-}
