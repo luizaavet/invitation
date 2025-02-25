@@ -29,127 +29,82 @@
 </head>
 
 <body>
-    <div id="automusic">
+    <div id="automusic" style="min-height:100vh; position: relative;">
         <audio id="backgroundMusic" loop >
-            <source src="./music/music.mp3" type="audio/mpeg">
+            <!-- src="./music/music.mp3"  -->
+            <source src="" type="audio/mpeg">
             Your browser does not support the audio element.
         </audio>
-        <p class="openInvi">You're Invited</p>
-        <p class="openInvi">Open the invitation letter</p>
+        <p class="openInvi">You are invited!</p>
+        <p class="openInvi">Click on the envelope below</p>
         <p class="dots"> . . . .</p>
         <img src="./image/envelope.png" id="movingImage" />
         <div class="shadoww"></div>
+        <image src = './image/logo.png' class="logo"/>
     </div>
 
     <div id="full" style="display:none">
         <div class="header">
             <div class="header-img">
-                <img class="img-left imgs" src="./image/picture-1.jpg"></img>
-                <img class="img-main imgs" src="./image/picture-2.jpg"></img>
-                <img class="img-right imgs" src="./image/picture-3.jpg"></img>
+                <img class="img-left imgs" src="./image/left.jpg"></img>
+                <img class="img-main imgs" src="./image/middle.png"></img>
+                <img class="img-right imgs" src="./image/right.jpg"></img>
             </div>
-            <div class="fst-content">
-                <p style="opacity: 0; animation: fadeIn 1s ease-in-out forwards; animation-delay: 1s;">ClinChoice Pharma</p>
-                <p style="opacity: 0; animation: fadeIn 1s ease-in-out forwards; animation-delay: 1.5s;">Apricot 2025</p>
-            </div>
-            <div class="hscd-content">
-                <p style="opacity: 0; animation: fadeIn 1s ease-in-out forwards; animation-delay: 2s;">Let's celebrate together!</p>
-            </div>
-            <div class="timer">
+            <div class="timer" >
                 <div class="days">
                     <p id="days"></p>
-                    <p class="tm-name">Day</p>
+                    <p class="tm-name">Days</p>
                 </div>
                 <div class="hours">
                     <p id="hours"></p>
-                    <p class="tm-name">Hour</p>
+                    <p class="tm-name">Hours</p>
                 </div>
                 <div class="minutes">
                     <p id="minutes"></p>
-                    <p class="tm-name">Minute</p>
+                    <p class="tm-name">Minutes</p>
                 </div>
                 <div class="seconds">
                     <p id="seconds"></p>
-                    <p class="tm-name">Second</p>
+                    <p class="tm-name">Seconds</p>
                 </div>
             </div>
         </div>
 
         <div class="main-box">
-            <div style="width: 60%; display: flex; flex-direction: column; font-family: melvastype; color: #555555;">
-                <p style="text-align: center; font-size: 35px;">You're Invited!</p>
-                <p style="text-align: center; max-width: 30rem;display: flex;margin-left: auto; margin-right: auto; font-size: 20px;">
-                    We are pleased to invite you to our Annual Awards Event, 
-                    where we will celebrate the outstanding achievements of 
-                    ClinChoice professionals in the development of the Armenian biotechnology 
-                    industry. Join us for an evening of recognition, innovation, 
-                    and celebration of excellence!
+            <div style="width: 60%; display: flex; flex-direction: column; font-family: calibri; color: #555555;">
+                <p style="text-align: center; font-size: 35px; color: #004A98;">PHARMA APRICOT 2025</p>
+                <p style="text-align: center; max-width: 30rem;display: flex;margin-left: auto; margin-right: auto; font-size: 20px; color: #004A98;">
+                    ClinChoice LLC is honored to invite You to our
+                    10th Anniversary Celebration
+                    and to mark a Decade of Achievements in advancing the Biotechnology Industry
+                    both in Armenia and Worldwide
                 </p>
-                <p style="font-size: 30px; text-align: center;  margin-top: 1rem;">Save the Date</p>
-                <div style="display: flex; flex-direction: column; margin-left: auto; margin-right: auto; ">
-                    <div style="display: flex; gap: 10px; justify-items: center; align-items: center;">
+                <p style="font-size: 30px; text-align: center;  margin-top: 1rem; color: #00BBB4;">Save the Date</p>
+                <div style="display: flex; flex-direction: column; margin-left: auto; margin-right: auto; color: #004A98;">
+                    <div style="display: flex; gap: 20px; justify-items: center; align-items: center;">
                         <img src="./image/may28.png" class="saveTheDateIcons"/>
-                        <p>May 28th</p>
+                        <p style="color: #773DBD;">May 28th, 2025</p>
                     </div>
-                    <div style="display: flex; gap: 10px; justify-items: center; align-items: center;">
+                    <div style="display: flex; margin-top: 10px; gap: 20px; justify-items: center; align-items: center;">
                         <img src="./image/time.png" class="saveTheDateIcons"/>
-                        <p>Time: 5:00 PM</p>
+                        <p style="color: #00BBB4;">Time: 5:00 PM</p>
                     </div>
-                    <div style="display: flex; gap: 10px; justify-items: center; align-items: center;">
+                    <div style="display: flex; gap: 20px; margin-top: 10px; justify-items: center; align-items: center;">
                         <img src="./image/location.png" class="saveTheDateIcons"/>
-                        <p>Venue: Nor Dvin Restaurant </br>
-                        Ejmiatsin, Ashtaraki Highway, 1 Building</p>
+                        <p style="color: #00BBB4;">Venue: Nor Dvin Restaurant </br>
+                        Ejmiatsin, Ashtaraki Highway, Building 1</p>
                     </div>
                 </div>
-                <p style="font-size: 30px; text-align: center;">We look forward to celebrating it together!</p>
             </div>
             <div style="width: 40%; margin-top: 1rem">
                 <img class="cld" src = './image/calendar.png' />
-            </div>
-        </div>
-
-        <div class="scd-box">
-            <p class="schedule" style="color: #555555;font-family: melvastype;">Agenda</p>
-            <div class="schedule-content" style="color: #555555;font-family: melvastype;">
-                <div class="sched-imgs">
-                    <img src="./image/speaker.png" style="height: 70px; width: 70px;"/>
-                    <img src="./image/10th.png"  style="height: 70px; width: 70px;"/>
-                    <img src="./image/dance.png" style="height: 70px; width: 100px;"/>
-                    <img src="./image/cake.png" style="height: 70px; width: 70px;"/>
-                </div>
-                <div class="loc-name">
-                    <div class="hour-loc imgs: ">
-                        <p class="date">18:00</p>
-                        <p class="text3">
-                            John's, Somo's speech
-                        </p>
-                    </div>
-                    <div class="hour-loc imgs">
-                        <p class="date">19:00</p>
-                        <p class="text3">
-                            10th anniversary recognition
-                        </p>
-                    </div>
-                    <div class="hour-loc imgs">
-                        <p class="date">20:30</p>
-                        <p class="text3">
-                            Band with the dance of haykakan zurna
-                        </p>
-                    </div>
-                    <div class="hour-loc imgs">
-                        <p class="date">21:30</p>
-                        <p class="text3">
-                            Cake cutting
-                        </p>
-                    </div>
-                </div>
             </div>
         </div>
     </div>
 </body>
 
 <script>
-    const endTime = new Date('May 28, 2025 17:00:00');
+    const endTime = new Date(Date.UTC(2025, 4, 28, 13, 0, 0)); 
 
     function updateTimer() {
         const now = new Date().getTime();
